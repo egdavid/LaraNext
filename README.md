@@ -15,6 +15,8 @@ LaraNext configuration is pretty simple. Its environment has been designed to of
 - Redis
 - Postgres
 
+Please note that it's entirely possible to replace Laravel with Lumen if you wish to benefit from a lighter backend.
+
 ### Nextjs 9
 
 The frontend is built on top of a simple `npx create-next-app` application with an `ESLint + Prettier + Airbnb Style` configuration.
