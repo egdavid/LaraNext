@@ -12,18 +12,23 @@ git clone https://github.com/egdavid/LaraNext.git
 docker-compose up -d --build
 ```
 
+Don't forget to rename .env.example to .env before executing the following commands.
+
 ## Docker commands
 
 Use Docker run to exec composer/artisan/npm commands
 
 ```
+### Install and update Laravel dependencies
 docker-compose run composer install
 docker-compose run composer update
 
+### Set the encryption key, migrate and seed the database
 docker-compose run artisan key:generate
 docker-compose run artisan migrate
 docker-compose run artisan db:seed (optional)
 
+### Install and update Nextjs dependencies
 docker-compose run npm install
 docker-compose run npm update
 ```
