@@ -107,7 +107,7 @@ services:
 
     nextjs:
         ports:
-            - 3001:3000
+            - 3000:3000
         build:
             context: frontend
             dockerfile: Dockerfile
