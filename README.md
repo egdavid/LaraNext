@@ -17,9 +17,15 @@ docker-compose up -d --build
 Use Docker run to exec composer/artisan/npm commands
 
 ```
-docker-compose run --rm composer update
-docker-compose run --rm artisan migrate
-docker-compose run --rm npm install
+docker-compose run composer install
+docker-compose run composer update
+
+docker-compose run artisan key:generate
+docker-compose run artisan migrate
+docker-compose run artisan db:seed (optional)
+
+docker-compose run npm install
+docker-compose run npm update
 ```
 
 ## Permissions
