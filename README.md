@@ -59,7 +59,7 @@ docker-compose run npm update
 Set the right permissions on Laravel storage folder
 
 ```md
-sudo chown -R \$USER:www-data backend
+sudo chown -R $USER:www-data backend
 sudo chmod -R 777 backend/storage
 ```
 
